@@ -1,6 +1,10 @@
 \documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath}
 
 \author{Elia Pasquali}
 
@@ -10,7 +14,7 @@
 \end{center}
 Questa è una raccolta di esercizi dei questionari online. Le risposte sono corrette prese dalle soluzioni.\\
 
-\textbf{\large{Primo questionario}}\\
+\section*{Primo questionario}
 
 \textbf{Argomenti}\\
 Spazi campionari, disposizioni e combinazioni, probabilità condizionate, eventi indipendenti\\
@@ -451,7 +455,8 @@ Pesco una carta da un mazzo di carte da Poker (52 carte). Sapendo che è uscita 
     \item Nessuna delle altre risposte
 \end{itemize}
 
-\textbf{\large{Secondo questionario}}\\
+\newpage
+\section*{Secondo questionario}
 
 \textbf{Argomenti}\\
 Variabili aleatorie discrete, valore medio e varianza, variabili aleatorie notevoli, covarianza , vettori aleatori discreti\\
@@ -464,7 +469,7 @@ Quanto vale $P(F=6)$?
 \begin{itemize}
     \item $0$
     \item $0.7$
-    \item $Nessuna delle altre risposte$
+    \item Nessuna delle altre risposte
     \item $0.0004$
     \item $0.03$ (Risposta Corretta)
 \end{itemize}
@@ -937,13 +942,13 @@ Quanto vale la varianza di X?
 \textbf{Esercizio 77}
 Archimede Pitagorico ha sviluppato una app per smartphone. Ha notato che il $3\%$ degli utenti che scaricano al sua app la aggiornano quello stesso giorno. La scorsa settimana ci sono stati 5000 download. Sia $N$ il numero di utenti che, la scorsa settimana, ha scaricato e aggiornato il giorno stesso la app di Archimede. Che tipo di variabile aleatoria è N ?
 
-\begin{itemizie}
+\begin{itemize}
     \item Variabile aleatoria binomiale (Risposta Corretta)
     \item Nessuna delle altre risposte
     \item Variabile aleatoria geometrica
     \item Variabile aleatoria di Bernoulli
     \item Variabile aleatoria di Poisson
-\end{itemizie}
+\end{itemize}
 
 \textbf{Esercizio 78}
 Si consideri la variabile aleatoria $X\sim Bin(1000, \frac{1}{500})$. Usando l'\textit{approssimazione di Poisson}, calcolare $P(X>0)$. Quanto vale questa probabilità?
@@ -1030,6 +1035,469 @@ La distribuzione Bin(1000, 0.004) può essere approssimata con la distribuzione:
     \item Po(2.5)
     \item Be(0.0004)
     \item Po(4) (Risposta Corretta)
+\end{itemize}
+
+\newpage
+\section*{Terzo questionario}
+
+\textbf{Argomenti}\\
+Variabili aleatorie assolutamente continue, valore medio, varianza e indipendenza,, variabili aleatorie continue notevoli, funzione di distribuzione, trasformazioni affini, legge dei grandi numeri e teorema del limite centrale, approssimazione normale\\
+
+\textbf{Esercizio 85}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_X(x)=
+\begin{cases}
+    0 & x<0\\
+    \frac{1}{24}(2x^2+x^4) & 0\leq x \leq 2 \\
+    1 & x>2
+\end{cases}
+\]
+Quanto vale $P(X\leq 1)$?
+ 
+\begin{itemize}
+    \item $\frac{1}{8}$ (Risposta Corretta)
+    \item $\frac{1}{3}$
+    \item $\frac{1}{4}$
+    \item $\frac{1}{16}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 86}
+Sia $Y$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_Y(y)=
+\begin{cases}
+    0 & y<0\\
+    \sqrt{y} & 0\leq y \leq 1 \\
+    1 & y>1
+\end{cases}
+\]
+Quanto vale $P(\frac{1}{16}\leq Y \leq \frac{1}{4})$?
+ 
+\begin{itemize}
+    \item $\frac{1}{2}$
+    \item $\frac{1}{4}$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $0$
+    \item $\frac{7}{96}$
+\end{itemize}
+
+\textbf{Esercizio 87}
+Siano $X\sim Po(2)$ e $Y\sim Po(6)$ due variabili aleatorie indipendenti. Quanto vale $Var(2 - 3X + Y)$?
+
+\begin{itemize}
+    \item $26$
+    \item $14$
+    \item Nessuna delle altre risposte
+    \item $24$ (Risposta Corretta)
+    \item $12$
+\end{itemize}
+
+\textbf{Esercizio 88}
+Sia $X$ una variabile aleatoria esponenziale con valore medio $\frac{1}{5}$. Quanto vale $P(X>5|X>3)$?
+
+\begin{itemize}
+    \item $1-e^{-10}$
+    \item $e^{-2}$
+    \item $1-e^{-2}$
+    \item Nessuna delle altre risposte
+    \item $e^{-10}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 89}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità data da
+\[
+f_x(x)=
+\begin{cases}
+    \frac{1}{6}(x+x^3) & 0\leq x\leq 2\\
+    0 & altrimenti
+\end{cases}
+\]
+Quanto vale $P(X\leq 1)$?
+ 
+\begin{itemize}
+    \item $\frac{1}{3}$
+    \item $\frac{1}{4}$
+    \item $\frac{1}{8}$ (Risposta Corretta)
+    \item $\frac{1}{16}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 90}
+Siano $X_1$, ..., $X_{100}$ variabili aleatorie i.i.d con distribuzione $U(0,6)$. Quale delle seguenti variabili ha una distribuzione che può essere approssimata con la distribuzione di una normale centrata standard?
+
+\begin{itemize}
+    \item $\frac{\overline{X}_{100}-3}{3}$
+    \item $10\cdot \frac{\overline{X}_{100}-3}{\sqrt{3}}$ (Risposta Corretta)
+    \item $\overline{X}_{100}$
+    \item $\frac{\overline{X}_{100}-6}{\sqrt{3}}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 91}
+Si consideri $X\sim U(-\frac{1}{2}, \frac{1}{2}$. Il valore medio della variabile aleatoria $Y=2e^{2X}$ vale
+
+\begin{itemize}
+    \item $e - e^{-1}$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $e^{-1}$
+    \item $0$
+    \item $e$
+\end{itemize}
+
+\textbf{Esercizio 92}
+Siano $X\sim N(6,5)$ e $Y\sim N(3,4)$ indipendenti. Quanto vale $P(X-Y>6)$?
+
+\begin{itemize}
+    \item $0.668$
+    \item $0.0808$
+    \item $0.244$
+    \item $0.1587$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 93}
+Sia $X\sim Exp(2)$. Allora $E(X^2)$ vale
+
+\begin{itemize}
+    \item $2$
+    \item Nessuna delle altre risposte
+    \item $\frac{1}{2}$ (Risposta Corretta)
+    \item $4$
+    \item $\frac{1}{4}$
+\end{itemize}
+
+\textbf{Esercizio 93}
+Sia $X$ una variabile aleatoria assolutamente continua con densità $f$. Siano inoltre $a,b$ due numeri reali tali che $a<b$. Allora
+
+\begin{itemize}
+    \item $P(X\in \{a,b\})=f(a)f(b)$
+    \item $P(X\in \{a,b\})=0$ (Risposta Corretta)
+    \item $P(X\in \{a,b\})=\int_{a}^{b}f(x) dx $
+    \item $P(X\in \{a,b\})=f(a)+f(b)$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 94}
+Siano $X_1$,...,$X_{81}$ variabili aleatorie i.i.d con distribuzione $Ge(\frac{1}{2})$. Quale delle seguenti variabili ha una distribuzione che può essere approssimata con la distribuzione di una normale centrata standard?
+
+\begin{itemize}
+    \item $9\cdot \frac{\overline{X}_{81}-1}{\sqrt{0.5}}$
+    \item $9\cdot \frac{0.5\overline{X}_{81}-1}{\sqrt{0.5}}$ (Risposta Corretta)
+    \item $\frac{0.5\overline{X}_{81}-1}{\sqrt{0.5}}$
+    \item $\overline{X}_{81}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 95}
+Siano $X\sim N(-1,2)$,$Y\sim N(3,2)$ e $Z\sim N(0,1)$ indipendenti. Il valore di $x\in \mathbf{R}$ per cui si ottiene $P(X-Y\leq 0)=P(Z\leq x)$ è
+
+\begin{itemize}
+    \item $0$
+    \item Nessuna delle altre risposte
+    \item $2$ (Risposta Corretta)
+    \item $-2$
+    \item $4$
+\end{itemize}
+
+\textbf{Esercizio 96}
+Si consideri $X\sim U(0,64)$. Il valore medio della variabile aleatoria $Y=\frac{3}{2}\sqrt{X}$ vale
+
+\begin{itemize}
+    \item $512$
+    \item $32$
+    \item $8$ (Risposta Corretta)
+    \item $64$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 97}
+Sia $X\sim Exp(1)$. Quale delle seguenti variabili è standardizzata (cioè ha media zero e varianza uno)?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $X-1$ (Risposta Corretta)
+    \item $X+1$
+    \item $\frac{X}{2}$
+    \item $X$
+\end{itemize}
+
+\textbf{Esercizio 98}
+Sia $X$ una variabile aleatoria esponenziale con valore medio $\frac{1}{6}$. Quanto vale $P(X>3|X<1)$?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte (Risposta Corretta)
+    \item $\frac{e^{-18}-e^{-6}}{e^{-18}}$
+    \item $\frac{e^{-1}-e^{-3}}{1-e^{-3}}$
+    \item $\frac{e^{-6}-e^{-18}}{1-e^{-18}}$
+    \item $\frac{e^{-3}-e^{-1}}{e^{-3}}$
+\end{itemize}
+
+\textbf{Esercizio 99}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità data da
+\[
+f_x(x)=
+\begin{cases}
+    6(x+x^2) & 0\leq x\leq 1\\
+    0 & altrimenti
+\end{cases}
+\]
+Quanto vale $P(0\leq X\leq 0.5)$?
+ 
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $0.5$ (Risposta Corretta)
+    \item $0.6$
+    \item $0.3$
+    \item $0.4$
+\end{itemize}
+
+\textbf{Esercizio 100}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_X(x)=
+\begin{cases}
+    0 & x<-1\\
+    \frac{1}{4}(x+1) & -1\leq x \leq 3 \\
+    1 & x>3
+\end{cases}
+\]
+Quanto vale $P(1\leq X \leq 2)$?
+ 
+\begin{itemize}
+    \item $\frac{1}{4}$ (Risposta Corretta)
+    \item $\frac{3}{4}$
+    \item $\frac{7}{8}$
+    \item $\frac{1}{8}$
+\end{itemize}
+
+\textbf{Esercizio 101}
+Sia $Y$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_Y(y)=
+\begin{cases}
+    0 & y<0\\
+    \sqrt{y} & 0\leq y \leq 1 \\
+    1 & y>1
+\end{cases}
+\]
+Quanto vale $P(Y \geq \frac{1}{25})$?
+
+\begin{itemize}
+    \item $\frac{1}{25}$
+    \item $\frac{4}{5}$ (Risposta Corretta)
+    \item $1$
+    \item $\frac{1}{5}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 102}
+Siano $X\sim Bin(1,\frac{1}{4})$ e $Y\sim Bin(2,\frac{1}{4})$ indipendenti. Quale delle seguenti affermazione è falsa?
+
+\begin{itemize}
+    \item $E(X+Y)=\frac{3}{4}$
+    \item Nessuan delle altre risposte (Risposta Corretta)
+    \item $Var(X+Y)=\frac{9}{16}$
+    \item $P(X=1)<P(Y=1)$
+    \item $X+Y\sim Bin(3,\frac{1}{4}$
+\end{itemize}
+
+\textbf{Esercizio 103}
+Sia $T$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_T(t)=
+\begin{cases}
+    0 & t<0\\
+    2t^2-t^4 & 0\leq t \leq 1 \\
+    1 & t>1
+\end{cases}
+\]
+Quanto vale $P(T \geq \frac{1}{2})$?
+
+\begin{itemize}
+    \item $\frac{7}{16}$
+    \item $\frac{87}{160}$
+    \item $\frac{9}{16}$ (Risposta Corretta)
+    \item $\frac{1}{2}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 104}
+Consideriamo le variabili aleatorie $X$ e $Y$, indipendenti e tali che $Var(X)=1$ e $Var(Y)=4$. Quanto vale $Var(X+Y-4)$?
+
+\begin{itemize}
+    \item $5$ (Risposta Corretta)
+    \item Non ci sono sufficienti informazioni per poter rispondere
+    \item $4$
+    \item $1$
+    \item $3$
+\end{itemize}
+
+\textbf{Esercizio 105}
+Sia $X\sim Exp(2)$. Quale delle seguenti variabili è standardizzata (cioè ha media zero e varianza uno)?
+
+\begin{itemize}
+    \item $2X-1$ (Risposta Corretta)
+    \item $\frac{X-2}{4}$
+    \item Nessunad delle altre risposte
+    \item $\frac{X+2}{4}$
+    \item $2X+1$
+\end{itemize}
+
+\textbf{Esercizio 106}
+Sia $X_1, X_2, ...$ una successione di variabili aleatorie i.i.d con valore medio $1$ e varianza $\sigma^2$. Sia inoltre $Z\sim N(0,1)$. Preso $x\in \mathbf{R}$, quale delle seguenti relazioni, per $n$ sufficientemente grande, è una conseguenza del teorema del limite centrale?
+
+\begin{itemize}
+    \item $P(\overline{X}_n > \frac{1+\sigma x}{\sqrt{n}}) \approx P(Z\leq x)$
+    \item Nessuna delle altre risposte
+    \item $P(\overline{X}_n < \frac{1}{\sqrt{n}}) \approx \frac{1}{2}$
+    \item $P(\overline{X}_n \leq \frac{\sigma x}{\sqrt{n}}+1) \approx P(Z\leq x)$ (Risposta Corretta)
+    \item $P(\overline{X}_n > 1 + \sigma x) \approx P(Z\leq x)$
+\end{itemize}
+
+\textbf{Esercizio 107}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_X(x)=
+\begin{cases}
+    0 & x<0\\
+    \frac{1}{2}(3x-x^3) & 0\leq x \leq 1 \\
+    1 & x>1
+\end{cases}
+\]
+Quanto vale $P(0 < X < \frac{1}{3})$?
+ 
+\begin{itemize}
+    \item $\frac{13}{27}$ (Risposta Corretta)
+    \item $\frac{14}{27}$
+    \item $\frac{1}{3}$
+    \item Nessuna delle altre risposte
+    \item $\frac{2}{3}$
+\end{itemize}
+
+\textbf{Esercizio 108}
+Si consideri $X\sim U(-1,1)$. Il valore medio della variabile aleatoria $Y=4e^{2X}$ vale
+
+\begin{itemize}
+    \item $\frac{1}{e}$
+    \item Nessuna delle altre risposte
+    \item $0$
+    \item $e-e^{-1}$
+    \item $e^2-e^{-2}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 109}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità  data da
+\[
+f_X(x)=
+\begin{cases}
+    0.3 & 0\leq x\leq 1\\
+    K & 1\leq x \leq 2 \\
+\end{cases}
+\]
+Quanto vale la costante $K$?
+
+\begin{itemize}
+    \item $0.5$
+    \item $0.7$ (Risposta Corretta)
+    \item $0.2$
+    \item $0.8$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 110}
+Siano $X\sim Ge(\frac{1}{3})$ e $Y\sim Ge(\frac{1}{2})$ due variabili aleatorie indipendenti. Quanto vale $Var(4+X-3Y)$?
+
+\begin{itemize}
+    \item $16$
+    \item $28$
+    \item $24$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $12$
+\end{itemize}
+
+\textbf{Esercizio 111}
+Si consideri $X\sim U(-1,1)$. Il valore medio della variabile aleatoria $Y=X^3$ vale
+
+\begin{itemize}
+    \item $\frac{1}{2}$
+    \item $0$ (Risposta Corrette)
+    \item Nessuna delle altre risposte
+    \item $\frac{1}{8}$
+    \item $\frac{1}{4}$
+\end{itemize}
+
+\textbf{Esercizio 112}
+Sia $X\sim N(1,4)$ e sia $\Phi$ la funzione di distribuzione della gaussiana centrata standard. Allora, per $x\in \mathbf{R}$, $P(X\leq x)$ è uguale a
+
+\begin{itemize}
+    \item $\Phi(x-1)$
+    \item $\Phi(\frac{x-1}{2})$ (Risposta Corretta)
+    \item $\Phi(x)$
+    \item $\Phi(\frac{x-1}{4})$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 113}
+Sia $X$ una variabile aleatoria esponenziale con valore medio $\frac{1}{2}$. Quanto vale $P(X>6|X<4)$?
+
+\begin{itemize}
+    \item $1-e^{-2}$
+    \item $e^{-4}$ (Risposta Corretta)
+    \item $e^{-2}$
+    \item Nessuna delle altre risposte
+    \item $1-e^{-4}$
+\end{itemize}
+
+\textbf{Esercizio 114}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_x(x)=
+\begin{cases}
+    0 & x<0\\
+    3x^2-2x^2 & 0\leq x\leq 1\\
+    1 & x>1
+\end{cases}
+\]
+Quanto vale $P(0.5\leq X\leq 1)$?
+ 
+\begin{itemize}
+    \item $0.5$ (Risposta Corretta)
+    \item $1$
+    \item $0.6$
+    \item Nessuna delle altre risposte
+    \item $0.4$
+\end{itemize}
+
+\textbf{Esercizio 115}
+Siano $X_1$, ..., $X_{36}$ variabili aleatorie i.i.d con distribuzione $Bin(100,\frac{1}{5})$. Quale delle seguenti variabili ha una distribuzione che può essere approssimata con la distribuzione di una normale centrata standard?
+
+\begin{itemize}
+    \item $10\cdot \frac{\overline{X}_{36}-0.2}{\sqrt{0.16}}$
+    \item $\overline{X}_{36}$
+    \item $\frac{\overline{X}_{36}-20}{4}$
+    \item $3\cdot \frac{\overline{X}_{36}-20}{2}$ (Risposta Corretta) 
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 116}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità data da
+\[
+f_x(x)=
+\begin{cases}
+    \frac{1}{x} & 1\leq x\leq e\\
+    0 & altrimenti
+\end{cases}
+\]
+Quanto vale $P(\frac{e}{2}\leq X\leq e)$?
+ 
+\begin{itemize}
+    \item $ln2$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $\frac{e}{2}$
+    \item $\frac{1}{2}$
+    \item $e$
 \end{itemize}
 
 \end{document}

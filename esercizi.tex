@@ -1,6 +1,10 @@
 \documentclass{report}
 \usepackage[utf8]{inputenc}
 \usepackage{eurosym}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath}
 
 \author{Elia Pasquali}
 
@@ -292,9 +296,10 @@ Lanciamo un dado. Consideriamo i seguenti eventi: $E_> = $"esce un punteggio mag
 \end{itemize}
 
 \section*{Anno 20/21}
-Le risposte degli esercizi di questa sezione sono prese dalle soluzioni dei questionari, quindi sicuramente corrette.
+Le risposte degli esercizi di questa sezione sono prese direttamente dalle soluzioni dei questionari.
 
 \subsection*{Primo questionario}
+
 \textbf{Argomenti}\\
 Spazi campionari, disposizioni e combinazioni, probabilità condizionate, eventi indipendenti\\
 
@@ -732,6 +737,1051 @@ Pesco una carta da un mazzo di carte da Poker (52 carte). Sapendo che è uscita 
     \item $\frac{1}{2}$
     \item $\frac{3}{13}$ (Risposta Corretta)
     \item Nessuna delle altre risposte
+\end{itemize}
+
+\newpage
+\subsection*{Secondo questionario}
+
+\textbf{Argomenti}\\
+Variabili aleatorie discrete, valore medio e varianza, variabili aleatorie notevoli, covarianza , vettori aleatori discreti\\
+
+\textbf{Esercizio 42}
+LeBron James è un famoso giocatore di basket. Negli USA, durante una partita di basket, un giocatore può commettere al massimo $6$ falli. Definiamo la variabile aleatoria $F$ come il numero di falli commessi da LeBron James durante una partita. La distribuzione di F è la seguente:\\
+$p_F(0) = 0.15$, $p_F(1) = 0.27$, $p_F(2) = 0.35$, $p_F(3) = 0.15$, $p_F(4) = 0.04$, $p_F(5) = 0.01$, $p_F(6) = ?$\\
+Quanto vale $P(F=6)$?
+
+\begin{itemize}
+    \item $0$
+    \item $0.7$
+    \item $Nessuna delle altre risposte$
+    \item $0.0004$
+    \item $0.03$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 43}
+Se si analizzano i dati numerici registrati nella maggior parte dei database reali, ci si accorge che la prima cifra di questi dati non è con uguale probabilità una delle cifre tra 1 e 9. La prima cifra più comune è 1, seguita da 2 e così via, in ordine, fino a 9 che è la cifra meno frequente. Questo fenomeno è noto come \textit{legge di Benford}.\\
+Sia $D$ la variabile aleatoria che mi dà il valore della prima cifra dato un numerico preso a caso da un database. La distribuzione di $D$ è la seguente: \\
+$p_D(1)=0.301$, $p_D(2)=0.176$, $p_D(3)=0.125$, $p_D(4)=0.097$, $p_D(5)=0.079$, $p_D(6)=0.067$, $p_D(7)=0.058$, $p_D(8)=0.051$, $p_D(9)=0.046$\\
+Quanto vale la probabilità che $D$ sia dispari?
+
+\begin{itemize}
+    \item $0.609$ (Risposta Corretta)
+    \item $0.391$
+    \item Nessuna delle altre risposte
+    \item $0.308$
+    \item $0.563$
+\end{itemize}
+
+\textbf{Esercizio 44}
+Una famosa hamburgeria di Boston offre hamburger con uno, due o tre medaglioni di carne. Sia $X$ il numero di medaglioni che un cliente qualunque ordina per il suo panino. La distribuzione di $X$ è la seguente: \\
+$p_X(1)=0.4$, $p_X(2)=0.5$, $p_X(3)=0.1$\\
+Si calcolano: $E(X)=1.7$ e $Var(X)=0.41$. Il costo totale di un hamburger è pari a 2 dollari per ogni medaglione di carne più un costo fisso di $1$ dollaro. Sia $T$ il prezzo dell'hamburger di un cliente qualunque. Quanto valgono $E(T)$ e $Var(T)$?
+
+\begin{itemize}
+    \item $4.4$ e $1.64$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $6.8$ e $1.82$
+    \item $7.8$ e $0.82$
+    \item $3.4$ e $2.64$
+\end{itemize}
+
+\textbf{Esercizio 45}
+Sia $X\sim Bin(1, \frac{1}{3})$ e poniamo $Y=1-X$. Qual è la distribuzione di $Y$?\\
+
+\begin{itemize}
+    \item $Bin(1, \frac{1}{2})$
+    \item $Bin(1, \frac{2}{3})$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $Bin(1, \frac{1}{3})$
+    \item $Po(\frac{1}{3})$
+\end{itemize}
+
+\textbf{Esercizio 46}
+Nel mio barattolo del caffè ci sono 10 capsule di decaffeinato, 5 di lungo e 15 di espresso. Pesco capsule in successione finché non trovo una capsula di caffè lungo. La variabile aleatoria $X$ è il numero di capsule pescate. La variabile aleatorie $X$ è geometrica?\\
+
+\begin{itemize}
+    \item No, perché l'esito di ogni estrazione non si può classificare come successo/insuccesso
+    \item No, perché le estrazioni non sono tra loro indipendenti (Risposta Corretta)
+    \item No, perché non è specificato un numero fissato di estrazioni
+    \item Nessuna delle altre risposte
+    \item Si, la variabile aleatoria $X$ è geometrica
+\end{itemize}
+
+\textbf{Esercizio 47}
+Supponi di lanciare un dado 100 volte e di vincere \EUR{3} ogni volta che esce il punteggio 6. Quanti euro ti aspetti di vincere?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item 300
+    \item 50 (Risposta Corretta)
+    \item 30
+    \item 100
+\end{itemize}
+
+\textbf{Esercizio 48}
+Bacco torna a casa dopo la festa dell'ultimo anno. Ha bevuto un po' troppo e non riesce a riconoscere la chiave di casa... Ha tre chiavi e prova e riprova una di queste tre, completamente a caso e senza scartare la chiave se non entra nella serratura, finché non riesce ad entrare. Qual è la probabilità che Bacco riesco ad aprire la porta entro il quarto tentativo (compreso)?
+
+\begin{itemize}
+    \item 0.33
+    \item 0.80 (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item 0.10
+    \item 0.67
+\end{itemize}
+
+\textbf{Esercizio 49}
+Un algoritmo estrapola una certa informazione da un dataset. L'algoritmo sbaglia nell'estrapolare questa informazione con probabilità $\frac{1}{200}$. Si testa l'algoritmo su 1000 dataset. Utilizzando l'approssimazione di Poisson, calcolare la probabilità che l'algoritmo sia in errore almeno una volta. Quanto vale questa probabilità?
+
+\begin{itemize}
+    \item 0.5643
+    \item 0.0337 
+    \item 0.0067
+    \item 0.9933 (Risposta Corretta)
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 50}
+Siano $X$ e $Y$ due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata dalla tabella\\
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc||c}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} & \\
+     & -1 & 0 & 1 & $p_X$ \\ \hline  
+    \multirow{2}{*}{X} & -1 & 0 & $\frac{1}{6}$ & $\frac{1}{3}$ & $\frac{1}{2}$ \\
+     & 1 & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{2}$ \\ \hline \hline
+     & $p_Y$ & $\frac{1}{6}$ & $\frac{1}{3}$ & $\frac{1}{2}$ & 1 \\
+\end{tabular}
+\end{center}
+Quanto vale $P(XY\geq 0 | X < 0)$ ?
+
+\begin{itemize}
+    \item $\frac{1}{3}$ (Risposta Corretta)
+    \item Non la posso calcolare 
+    \item 0
+    \item $\frac{1}{6}$
+    \item $\frac{1}{2}$
+\end{itemize}
+
+\textbf{Esercizio 51}
+Siano $X$ e $Y$ due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata dalla tabella\\
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc||c}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} & \\
+     & -1 & 0 & 1 & $p_X$ \\ \hline  
+    \multirow{2}{*}{X} & -1 & 0 & $\frac{1}{6}$ & $\frac{1}{3}$ & $\frac{1}{2}$ \\
+     & 1 & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{2}$ \\ \hline \hline
+     & $p_Y$ & $\frac{1}{6}$ & $\frac{1}{3}$ & $\frac{1}{2}$ & 1 \\
+\end{tabular}
+\end{center}
+Quanto vale il valore medio di $|X+Y|$ ?
+
+\begin{itemize}
+    \item $\frac{2}{3}$ (Risposta Corretta)
+    \item $\frac{5}{6}$ 
+    \item $\frac{1}{3}$
+    \item Nessuna delle altre risposte
+    \item $\frac{1}{6}$
+\end{itemize}
+
+\textbf{Esercizio 52}
+Consideriamo le varaibili aleatorie X e Y tali che $Var(X)=3$, $Var(Y)=5$ e $Cov(X,Y)=-1$. Quanto vale $Var(X+Y)$?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item 10
+    \item 7
+    \item 9
+    \item 6 (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 53}
+Sia X una variabile aleatoria discreta tale che $P(X=0)=\frac{1}{4}$, $P(X=1)=\frac{1}{4}$ e $P(X=2)=\frac{1}{2}$. Allora la varianza di X vale
+
+\begin{itemize}
+    \item $\frac{9}{16}$ (Risposta Corretta)
+    \item $\frac{11}{16}$
+    \item $\frac{9}{4}$
+    \item Nessuna delle altre risposte
+    \item 1
+\end{itemize}
+
+\textbf{Esercizio 54}
+Archimede Pitagorico ha sviluppato una app per smartphone. Ha notato che il $3\%$ degli utenti che scaricano al sua app la aggiornano quello stesso giorno. Sia $N$ il primo degli utenti che, la scorsa settimana, ha scaricato e aggiornato il giorno stesso la app di Archimede. Quanto vale $P(N>10)$?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item 0.3
+    \item 0.023
+    \item 0.737 (Risposta Corretta)
+    \item 0.263
+\end{itemize}
+
+\textbf{Esercizio 55}
+Consideriamo le variabili aleatorie X e Y tali che $Var(X)=5$ e $Var(Y)=3$. Quanto vale $Var(X+Y)$?
+
+\begin{itemize}
+    \item Non ci sono sufficienti informazioni per poter rispondere (Risposta Corretta)
+    \item 12
+    \item 10
+    \item 8
+    \item 14
+\end{itemize}
+
+\textbf{Esercizio 56}
+Sia X una variabile aleatoria discreta tale che $P(X=0)=P(X=-1)=\frac{1}{4}$ e $P(X=2)=\frac{1}{2}$. Definiamo $Z=2X^3-X^2$. Allora $P(Z=3)$ vale
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $\frac{1}{4}$
+    \item 0 (Risposta Corretta)
+    \item $\frac{3}{4}$
+    \item $\frac{1}{2}$
+\end{itemize}
+
+\textbf{Esercizio 57}
+La variabile aleatoria X ha distribuzione binomiale con media 1 e varianza $\frac{2}{3}$. Quanto vale $P(X=2)$?
+
+\begin{itemize}
+    \item $\frac{2}{9}$ (Risposta Corretta)
+    \item $\frac{2}{3}$
+    \item $\frac{4}{9}$
+    \item $\frac{1}{3}$
+    \item Non ci sono informazioni sufficienti per poter rispondere
+\end{itemize}
+
+\textbf{Esercizio 58}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{cc|cccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{4}{c}{Y} \\
+     & & $0$ & $1$ & $2$ & $3$ \\ \hline  
+    \multirow{3}{*}{X} & $-1$ & $0.05$ & $0.15$ & $0.05$ & $0.10$ \\
+     & $0$ & $0.10$ & $0.05$ & $0.05$ & $0.05$ \\
+     & $1$ & $0.10$ & $0.20$ & $0.05$ & $0.05$ \\
+    \end{tabular}
+\end{center}
+Quanto vale $P(X<0)$?
+
+\begin{itemize}
+    \item Nessuna delle risposte precedenti
+    \item $0.05$
+    \item $0.60$
+    \item $0.35$ (Risposta Corretta)
+    \item $0.25$
+\end{itemize}
+
+\textbf{Esercizio 59}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} \\
+     & & $0$ & $1$ & $2$ \\ \hline  
+    \multirow{2}{*}{X} & $-1$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$\\
+     & $1$ & $0$ & $\frac{1}{2}$ & $0$\\
+    \end{tabular}
+\end{center}
+Quanto vale il valore medio di $X^2Y$?
+
+\begin{itemize}
+    \item 1 (Risposta Corretta)
+    \item $-\frac{1}{3}$
+    \item $\frac{4}{3}$
+    \item 0
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 60}
+Sia X una variabile aleatoria che assume i valori 1, 2 e 3, tutti con la stessa probabilità $\frac{1}{3}$. Allora $E(X^3)$ vale
+
+\begin{itemize}
+    \item $\frac{2}{3}$
+    \item $12$ (Risposta Corretta)
+    \item $8$
+    \item Nessuna delle risposte precedenti
+    \item $\frac{14}{3}$
+\end{itemize}
+
+\textbf{Esercizio 61}
+Nella cittadina di Delft il numero giornaliero di incidenti in bicicletta ha distribuzione Poisson di parametro 3. Qual è la probabilità che in un dato giorno ci siano esattamente due incidenti? 
+
+\begin{itemize}
+    \item $0.1992$
+    \item Nessuna delle altre risposte
+    \item $0.2240$ (Risposta Corretta)
+    \item $0.0498$
+    \item $0.1494$
+\end{itemize}
+
+\textbf{Esercizio 62}
+Mr. Muscolo si allena provando dei tiri liberi. Ad ogni lancio la probabilità di fare canestro è $0.75$. Assumendo che i risultati dei tiri liberi siano indipendenti tra loro, dire quale delle seguenti è una variabile aleatoria binomiale:
+
+\begin{itemize}
+    \item Mr. Muscolo lancia ripetutamente tiri liberi. La variabile aleatoria X è il numero di tiri che vanno a canestro
+    \item Mr. Muscolo lancia finché non fa canestro. La variabile X è il numero di tiri effettuati 
+    \item Mr. Muscolo lancia 5 tiri liberi. La variabile aleatoria X è il numero di tiri che vanno a canestro  (Risposta Corretta)
+    \item Mr. Musscolo lancia tiri liberi finché non fa 5 canestri. La variabile aleatoria X è il numero di tiri effettuati
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 63}
+Si consideri la variabile aleatoria $X\sim Po(\lambda)$. Si sa che $P(X=0)=\frac{1}{5}$. Allora il parametro $\lambda$ vale
+
+\begin{itemize}
+    \item $ln(\frac{5}{4}$
+    \item $\frac{1}{5}$
+    \item $ln 5$ (Risposta Corretta)
+    \item Non lo posso calcolare
+    \item $\frac{4}{5}$
+\end{itemize}
+
+\textbf{Esercizio 64}
+In un gioco di fortuna un turno consiste nel lanciare un dado 12 volte. Sia X il numero di volte che si è ottenuto il punteggio 1 durante un turno. Quanto valgono (circa) media e varianza di X?
+
+\begin{itemize}
+    \item $0.17$ e $0.14$
+    \item Nessuna delle altre risposte
+    \item $2$ e $0.14$
+    \item $2$ e $1.67$ (Risposta Corretta)
+    \item $0.17$ e $1.67$
+\end{itemize}
+
+\textbf{Esercizio 65}
+Nel gioco del Lotto, per ogni ruota, vengono estratti 5 numeri tra 1 e 90 senza reimmissione. La probabilità che un certo numero esca su una determinata ruota è $\frac{1}{18}$.\\
+La mia anziana vicina gioca al Lotto: ha sognato il marito defunto, che le ha suggerito di giocare il numero 56 sulla ruota di Milano. Qual è circa la probabilità che il 56 esca per la prima volta entro la terza estrazione a partire da oggi?
+\begin{itemize}
+    \item $0.2044$
+    \item $0.1578$ (Risposta Corretta)
+    \item $0.8424$
+    \item $0.0496$
+    \item Nessuna delle risposte precedenti
+\end{itemize}
+
+\textbf{Esercizio 66}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.25}
+    \begin{tabular}{cc|cccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{4}{c}{Y} \\
+     & & $0$ & $1$ & $2$ & $3$ \\ \hline  
+    \multirow{3}{*}{X} & $-1$ & $0.05$ & $0.15$ & $0.05$ & $0.10$ \\
+     & $0$ & $0.10$ & $0.05$ & $0.05$ & $0.05$ \\
+     & $1$ & $0.10$ & $0.20$ & $0.05$ & $0.05$ \\
+    \end{tabular}
+\end{center}
+Quanto vale $P(X=1|XY=0)$?
+
+\begin{itemize}
+    \item $0.25$ (Risposta Corretta)
+    \item $0.10$
+    \item Nessuna delle risposte precedenti
+    \item $0.15$
+    \item $0.40$
+\end{itemize}
+
+\textbf{Esercizio 67}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} \\
+     & & $0$ & $1$ & $2$ \\ \hline  
+    \multirow{2}{*}{X} & $-1$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$\\
+     & $1$ & $0$ & $\frac{1}{2}$ & $0$\\
+    \end{tabular}
+\end{center}
+Quanto vale il valore medio di $|X|Y$?
+
+\begin{itemize}
+    \item 0
+    \item Nessuna delle altre risposte
+    \item $-\frac{1}{3}$
+    \item $\frac{4}{3}$
+    \item 1 (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 68}
+Si consideri la variabile aleatoria $X\sim Bin(n, p)$. Allora $P(0<X\geq 1)$ vale
+
+\begin{itemize}
+    \item $np(1-p)^{n-1}$ (Risposta Corretta)
+    \item $(1-p)^n+np(1-p)^{n-1}$ 
+    \item $(1-p)^n$
+    \item Nessuna delle risposte precedenti
+    \item $p(1-p)^{n-1}$
+\end{itemize}
+
+\textbf{Esercizio 69}
+Papaerina è molto socievole e passa molto tempo al telefono con amici e familiari. Effettua quotidianamente un numero di chiamate descritto da una variabile aleatoria di Poisson di parametro $4.6$. Qual è la probabilità che oggi Paperina effettui almeno una chiamata?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $0.01$ 
+    \item $0.046$
+    \item $0.99$ (Risposta Corretta)
+    \item $0.22$
+\end{itemize}
+
+\textbf{Esercizio 70}
+Sia X una variabile aleatoria discreta tale che $P(X=0)=P(X=-1)=\frac{1}{4}$ e $P(X=2)=\frac{1}{2}$. Definiamo $Y=X-X^2$. Allora $P(Y=0)$ vale
+
+\begin{itemize}
+    \item $\frac{1}{2}$
+    \item $\frac{3}{4}$
+    \item Nessuna delle altre risposte
+    \item 0
+    \item $\frac{1}{4}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 71}
+Mr. Muscolo si allena provando dei tiri liberi. Ad ogni lancio la probabilità di fare canestro è $0.75$. Assumendo che i risultati dei tiri liberi siano indipendenti tra loro, dire quale delle seguenti è una variabile aleatoria geometrica:
+
+\begin{itemize}
+    \item Mr. Muscolo lancia ripetutamente tiri liberi. La variabile aleatoria X è il numero di tiri che vanno a canestro
+    \item Mr. Muscolo lancia finché non fa canestro. La variabile X è il numero di tiri effettuati (Risposta Corretta)
+    \item Mr. Muscolo lancia 5 tiri liberi. La variabile aleatoria X è il numero di tiri che vanno a canestro
+    \item Mr. Musscolo lancia tiri liberi finché non fa 5 canestri. La variabile aleatoria X è il numero di tiri effettuati
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 72}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} \\
+     & & $0$ & $1$ & $2$ \\ \hline  
+    \multirow{2}{*}{X} & $-1$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$\\
+     & $1$ & $\frac{1}{4}$ & $0$ & $\frac{1}{4}$\\
+    \end{tabular}
+\end{center}
+Quanto vale $P(X>0|Y$ pari$)$?
+
+\begin{itemize}
+    \item $\frac{1}{2}$
+    \item Nessuna delle altre risposte
+    \item $-\frac{1}{3}$
+    \item $\frac{2}{5}$
+    \item $\frac{3}{5}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 73}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} \\
+     & & $0$ & $1$ & $2$ \\ \hline  
+    \multirow{2}{*}{X} & $-1$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$\\
+     & $1$ & $0$ & $\frac{1}{2}$ & $0$\\
+    \end{tabular}
+\end{center}
+Quanto vale il valore medio di $XY$?
+
+\begin{itemize}
+    \item 0 (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $-\frac{1}{3}$
+    \item $\frac{4}{3}$
+    \item 1 
+\end{itemize}
+
+\textbf{Esercizio 74}
+Si consideri la variabile aleatoria $X\sim Ge(p)$. Allora $P(X\geq 2$ vale
+
+\begin{itemize}
+    \item $1-(1-p)^2$
+    \item Nessuna delle altre risposte
+    \item $p$
+    \item $(1-p)^2$
+    \item $1-p$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 75}
+Sia X una variabile aleatoria discreta tale che $P(X=0)=P(X=-1)=\frac{1}{4}$ e $P(X=2)=\frac{1}{2}$. Definiamo $Y=X-X^2$. Allora l'alfabeto di Y è
+
+\begin{itemize}
+    \item $\{0, -2, -6\}$
+    \item $\{0, -2, 2\}$
+    \item Nessuna delle altre risposte
+    \item $\{0, -6\}$
+    \item $\{0, -2\}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 76}
+Si lanciano contemporaneamente tre monete. La variabile aleatoria X rappresenta il numero di monete che hanno dato testa come risultato del lancio. La distribuzione di X è la seguente :\\
+$p_X(0)=\frac{1}{8}$, $p_X(1)=\frac{3}{8}$, $p_X(2)=\frac{3}{8}$, $p_X(3)=\frac{1}{8}$\\
+Quanto vale la varianza di X?
+
+\begin{itemize}
+    \item $\frac{9}{4}$
+    \item $\frac{3}{4}$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $\frac{3}{2}$
+    \item $3$
+\end{itemize}
+
+\textbf{Esercizio 77}
+Archimede Pitagorico ha sviluppato una app per smartphone. Ha notato che il $3\%$ degli utenti che scaricano al sua app la aggiornano quello stesso giorno. La scorsa settimana ci sono stati 5000 download. Sia $N$ il numero di utenti che, la scorsa settimana, ha scaricato e aggiornato il giorno stesso la app di Archimede. Che tipo di variabile aleatoria è N ?
+
+\begin{itemize}
+    \item Variabile aleatoria binomiale (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item Variabile aleatoria geometrica
+    \item Variabile aleatoria di Bernoulli
+    \item Variabile aleatoria di Poisson
+\end{itemize}
+
+\textbf{Esercizio 78}
+Si consideri la variabile aleatoria $X\sim Bin(1000, \frac{1}{500})$. Usando l'\textit{approssimazione di Poisson}, calcolare $P(X>0)$. Quanto vale questa probabilità?
+
+\begin{itemize}
+    \item $0.2707$
+    \item $0.8647$ (Risposta Corretta)
+    \item $0.1353$
+    \item $1$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 79}
+La variabile aleatoria X ha distribuzione binomiale con media 1 e varianza $\frac{4}{5}$. Quanto vale $P(X=2)$?
+
+\begin{itemize}
+    \item $0.25$
+    \item $0.10$
+    \item $0.20$ (Risposta Corretta)
+    \item $0.30$
+    \item Non ci sono informazioni sufficienti per poter rispondere
+\end{itemize}
+
+\textbf{Esercizio 80}
+Due biologi incrociano due piante. In ciascuna il gene che determina il colore è della forma \textbf{Gg}. Questo significa che ogni pianta nata dall'incrocio ha probabilità $0.25$ di ereditare il gene \textbf{gg}, che rende la pianta albina. Si assuma che la trasmissione dei geni sia indipendente per ogni pianta generata. Si controllano una dopo l'altra le piante nate da questo incrocio. Qual è la probabilità che la prima pianta albina osservata sia la sesta pianta che viene controllata?
+
+\begin{itemize}
+    \item $0.0007$
+    \item Nessuna delle altre risposte
+    \item $0.0593$ (Risposta Corretta)
+    \item $0.0044$
+    \item $0.3560$
+\end{itemize}
+
+\textbf{Esercizio 81}
+La variabile aleatoria X ha densità discreta della forma $P(X=k)=e^{-4}\frac{4^k}{k!}$, per ogni $k\in \mathbf{N}_0$. Quanto vale $E(X^2)$ ?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item 20 (Risposta Corretta)
+    \item 4
+    \item 16
+    \item 8
+\end{itemize}
+
+\textbf{Esercizio 82}
+Siano X e Y due variabili aleatorie discrete con densità congiunta $p_{XY}$ illustrata in tabella
+\begin{center}
+    \renewcommand{\arraystretch}{1.75}
+    \begin{tabular}{cc|ccc}
+    \multicolumn{2}{c}{\multirow{2}{*}{$p_{XY}$}} & \multicolumn{3}{c}{Y} \\
+     & & $0$ & $1$ & $2$ \\ \hline  
+    \multirow{2}{*}{X} & $-1$ & $\frac{1}{6}$ & $\frac{1}{6}$ & $\frac{1}{6}$\\
+     & $1$ & $0$ & $\frac{1}{2}$ & $0$\\
+    \end{tabular}
+\end{center}
+Quanto vale il valore medio di $|X|+Y$?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $-1$
+    \item $2$ (Risposta Corretta)
+    \item $1$
+    \item $0$
+\end{itemize}
+
+\textbf{Esercizio 83}
+Il numero di particelle radioattive rilevate da un contatore Geiger è descritto da una variabile aleatoria di Poisson. In media nell'arco di 1 millisecondo, il contatore rileva 4 particelle. Qual è la probabilità che in 1 millisecondo il contatore non rilevi alcuna particella?
+
+\begin{itemize}
+    \item $0.0183$ (Risposta Corretta)
+    \item $0.0025$
+    \item Non ci sono informazioni sufficienti per poter rispondere
+    \item $0.1606$
+    \item $0.9817$
+\end{itemize}
+
+\textbf{Esercizio 84}
+La distribuzione Bin(1000, 0.004) può essere approssimata con la distribuzione:
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item Ge(0.0004)
+    \item Po(2.5)
+    \item Be(0.0004)
+    \item Po(4) (Risposta Corretta)
+\end{itemize}
+
+\newpage
+\subsection*{Terzo questionario}
+
+\textbf{Argomenti}\\
+Variabili aleatorie assolutamente continue, valore medio, varianza e indipendenza,, variabili aleatorie continue notevoli, funzione di distribuzione, trasformazioni affini, legge dei grandi numeri e teorema del limite centrale, approssimazione normale\\
+
+\textbf{Esercizio 85}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_X(x)=
+\begin{cases}
+    0 & x<0\\
+    \frac{1}{24}(2x^2+x^4) & 0\leq x \leq 2 \\
+    1 & x>2
+\end{cases}
+\]
+Quanto vale $P(X\leq 1)$?
+ 
+\begin{itemize}
+    \item $\frac{1}{8}$ (Risposta Corretta)
+    \item $\frac{1}{3}$
+    \item $\frac{1}{4}$
+    \item $\frac{1}{16}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 86}
+Sia $Y$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_Y(y)=
+\begin{cases}
+    0 & y<0\\
+    \sqrt{y} & 0\leq y \leq 1 \\
+    1 & y>1
+\end{cases}
+\]
+Quanto vale $P(\frac{1}{16}\leq Y \leq \frac{1}{4})$?
+ 
+\begin{itemize}
+    \item $\frac{1}{2}$
+    \item $\frac{1}{4}$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $0$
+    \item $\frac{7}{96}$
+\end{itemize}
+
+\textbf{Esercizio 87}
+Siano $X\sim Po(2)$ e $Y\sim Po(6)$ due variabili aleatorie indipendenti. Quanto vale $Var(2 - 3X + Y)$?
+
+\begin{itemize}
+    \item $26$
+    \item $14$
+    \item Nessuna delle altre risposte
+    \item $24$ (Risposta Corretta)
+    \item $12$
+\end{itemize}
+
+\textbf{Esercizio 88}
+Sia $X$ una variabile aleatoria esponenziale con valore medio $\frac{1}{5}$. Quanto vale $P(X>5|X>3)$?
+
+\begin{itemize}
+    \item $1-e^{-10}$
+    \item $e^{-2}$
+    \item $1-e^{-2}$
+    \item Nessuna delle altre risposte
+    \item $e^{-10}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 89}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità data da
+\[
+f_x(x)=
+\begin{cases}
+    \frac{1}{6}(x+x^3) & 0\leq x\leq 2\\
+    0 & altrimenti
+\end{cases}
+\]
+Quanto vale $P(X\leq 1)$?
+ 
+\begin{itemize}
+    \item $\frac{1}{3}$
+    \item $\frac{1}{4}$
+    \item $\frac{1}{8}$ (Risposta Corretta)
+    \item $\frac{1}{16}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 90}
+Siano $X_1$, ..., $X_{100}$ variabili aleatorie i.i.d con distribuzione $U(0,6)$. Quale delle seguenti variabili ha una distribuzione che può essere approssimata con la distribuzione di una normale centrata standard?
+
+\begin{itemize}
+    \item $\frac{\overline{X}_{100}-3}{3}$
+    \item $10\cdot \frac{\overline{X}_{100}-3}{\sqrt{3}}$ (Risposta Corretta)
+    \item $\overline{X}_{100}$
+    \item $\frac{\overline{X}_{100}-6}{\sqrt{3}}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 91}
+Si consideri $X\sim U(-\frac{1}{2}, \frac{1}{2}$. Il valore medio della variabile aleatoria $Y=2e^{2X}$ vale
+
+\begin{itemize}
+    \item $e - e^{-1}$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $e^{-1}$
+    \item $0$
+    \item $e$
+\end{itemize}
+
+\textbf{Esercizio 92}
+Siano $X\sim N(6,5)$ e $Y\sim N(3,4)$ indipendenti. Quanto vale $P(X-Y>6)$?
+
+\begin{itemize}
+    \item $0.668$
+    \item $0.0808$
+    \item $0.244$
+    \item $0.1587$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 93}
+Sia $X\sim Exp(2)$. Allora $E(X^2)$ vale
+
+\begin{itemize}
+    \item $2$
+    \item Nessuna delle altre risposte
+    \item $\frac{1}{2}$ (Risposta Corretta)
+    \item $4$
+    \item $\frac{1}{4}$
+\end{itemize}
+
+\textbf{Esercizio 93}
+Sia $X$ una variabile aleatoria assolutamente continua con densità $f$. Siano inoltre $a,b$ due numeri reali tali che $a<b$. Allora
+
+\begin{itemize}
+    \item $P(X\in \{a,b\})=f(a)f(b)$
+    \item $P(X\in \{a,b\})=0$ (Risposta Corretta)
+    \item $P(X\in \{a,b\})=\int_{a}^{b}f(x) dx $
+    \item $P(X\in \{a,b\})=f(a)+f(b)$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 94}
+Siano $X_1$,...,$X_{81}$ variabili aleatorie i.i.d con distribuzione $Ge(\frac{1}{2})$. Quale delle seguenti variabili ha una distribuzione che può essere approssimata con la distribuzione di una normale centrata standard?
+
+\begin{itemize}
+    \item $9\cdot \frac{\overline{X}_{81}-1}{\sqrt{0.5}}$
+    \item $9\cdot \frac{0.5\overline{X}_{81}-1}{\sqrt{0.5}}$ (Risposta Corretta)
+    \item $\frac{0.5\overline{X}_{81}-1}{\sqrt{0.5}}$
+    \item $\overline{X}_{81}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 95}
+Siano $X\sim N(-1,2)$,$Y\sim N(3,2)$ e $Z\sim N(0,1)$ indipendenti. Il valore di $x\in \mathbf{R}$ per cui si ottiene $P(X-Y\leq 0)=P(Z\leq x)$ è
+
+\begin{itemize}
+    \item $0$
+    \item Nessuna delle altre risposte
+    \item $2$ (Risposta Corretta)
+    \item $-2$
+    \item $4$
+\end{itemize}
+
+\textbf{Esercizio 96}
+Si consideri $X\sim U(0,64)$. Il valore medio della variabile aleatoria $Y=\frac{3}{2}\sqrt{X}$ vale
+
+\begin{itemize}
+    \item $512$
+    \item $32$
+    \item $8$ (Risposta Corretta)
+    \item $64$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 97}
+Sia $X\sim Exp(1)$. Quale delle seguenti variabili è standardizzata (cioè ha media zero e varianza uno)?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $X-1$ (Risposta Corretta)
+    \item $X+1$
+    \item $\frac{X}{2}$
+    \item $X$
+\end{itemize}
+
+\textbf{Esercizio 98}
+Sia $X$ una variabile aleatoria esponenziale con valore medio $\frac{1}{6}$. Quanto vale $P(X>3|X<1)$?
+
+\begin{itemize}
+    \item Nessuna delle altre risposte (Risposta Corretta)
+    \item $\frac{e^{-18}-e^{-6}}{e^{-18}}$
+    \item $\frac{e^{-1}-e^{-3}}{1-e^{-3}}$
+    \item $\frac{e^{-6}-e^{-18}}{1-e^{-18}}$
+    \item $\frac{e^{-3}-e^{-1}}{e^{-3}}$
+\end{itemize}
+
+\textbf{Esercizio 99}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità data da
+\[
+f_x(x)=
+\begin{cases}
+    6(x+x^2) & 0\leq x\leq 1\\
+    0 & altrimenti
+\end{cases}
+\]
+Quanto vale $P(0\leq X\leq 0.5)$?
+ 
+\begin{itemize}
+    \item Nessuna delle altre risposte
+    \item $0.5$ (Risposta Corretta)
+    \item $0.6$
+    \item $0.3$
+    \item $0.4$
+\end{itemize}
+
+\textbf{Esercizio 100}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_X(x)=
+\begin{cases}
+    0 & x<-1\\
+    \frac{1}{4}(x+1) & -1\leq x \leq 3 \\
+    1 & x>3
+\end{cases}
+\]
+Quanto vale $P(1\leq X \leq 2)$?
+ 
+\begin{itemize}
+    \item $\frac{1}{4}$ (Risposta Corretta)
+    \item $\frac{3}{4}$
+    \item $\frac{7}{8}$
+    \item $\frac{1}{8}$
+\end{itemize}
+
+\textbf{Esercizio 101}
+Sia $Y$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_Y(y)=
+\begin{cases}
+    0 & y<0\\
+    \sqrt{y} & 0\leq y \leq 1 \\
+    1 & y>1
+\end{cases}
+\]
+Quanto vale $P(Y \geq \frac{1}{25})$?
+
+\begin{itemize}
+    \item $\frac{1}{25}$
+    \item $\frac{4}{5}$ (Risposta Corretta)
+    \item $1$
+    \item $\frac{1}{5}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 102}
+Siano $X\sim Bin(1,\frac{1}{4})$ e $Y\sim Bin(2,\frac{1}{4})$ indipendenti. Quale delle seguenti affermazione è falsa?
+
+\begin{itemize}
+    \item $E(X+Y)=\frac{3}{4}$
+    \item Nessuan delle altre risposte (Risposta Corretta)
+    \item $Var(X+Y)=\frac{9}{16}$
+    \item $P(X=1)<P(Y=1)$
+    \item $X+Y\sim Bin(3,\frac{1}{4}$
+\end{itemize}
+
+\textbf{Esercizio 103}
+Sia $T$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_T(t)=
+\begin{cases}
+    0 & t<0\\
+    2t^2-t^4 & 0\leq t \leq 1 \\
+    1 & t>1
+\end{cases}
+\]
+Quanto vale $P(T \geq \frac{1}{2})$?
+
+\begin{itemize}
+    \item $\frac{7}{16}$
+    \item $\frac{87}{160}$
+    \item $\frac{9}{16}$ (Risposta Corretta)
+    \item $\frac{1}{2}$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 104}
+Consideriamo le variabili aleatorie $X$ e $Y$, indipendenti e tali che $Var(X)=1$ e $Var(Y)=4$. Quanto vale $Var(X+Y-4)$?
+
+\begin{itemize}
+    \item $5$ (Risposta Corretta)
+    \item Non ci sono sufficienti informazioni per poter rispondere
+    \item $4$
+    \item $1$
+    \item $3$
+\end{itemize}
+
+\textbf{Esercizio 105}
+Sia $X\sim Exp(2)$. Quale delle seguenti variabili è standardizzata (cioè ha media zero e varianza uno)?
+
+\begin{itemize}
+    \item $2X-1$ (Risposta Corretta)
+    \item $\frac{X-2}{4}$
+    \item Nessunad delle altre risposte
+    \item $\frac{X+2}{4}$
+    \item $2X+1$
+\end{itemize}
+
+\textbf{Esercizio 106}
+Sia $X_1, X_2, ...$ una successione di variabili aleatorie i.i.d con valore medio $1$ e varianza $\sigma^2$. Sia inoltre $Z\sim N(0,1)$. Preso $x\in \mathbf{R}$, quale delle seguenti relazioni, per $n$ sufficientemente grande, è una conseguenza del teorema del limite centrale?
+
+\begin{itemize}
+    \item $P(\overline{X}_n > \frac{1+\sigma x}{\sqrt{n}}) \approx P(Z\leq x)$
+    \item Nessuna delle altre risposte
+    \item $P(\overline{X}_n < \frac{1}{\sqrt{n}}) \approx \frac{1}{2}$
+    \item $P(\overline{X}_n \leq \frac{\sigma x}{\sqrt{n}}+1) \approx P(Z\leq x)$ (Risposta Corretta)
+    \item $P(\overline{X}_n > 1 + \sigma x) \approx P(Z\leq x)$
+\end{itemize}
+
+\textbf{Esercizio 107}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_X(x)=
+\begin{cases}
+    0 & x<0\\
+    \frac{1}{2}(3x-x^3) & 0\leq x \leq 1 \\
+    1 & x>1
+\end{cases}
+\]
+Quanto vale $P(0 < X < \frac{1}{3})$?
+ 
+\begin{itemize}
+    \item $\frac{13}{27}$ (Risposta Corretta)
+    \item $\frac{14}{27}$
+    \item $\frac{1}{3}$
+    \item Nessuna delle altre risposte
+    \item $\frac{2}{3}$
+\end{itemize}
+
+\textbf{Esercizio 108}
+Si consideri $X\sim U(-1,1)$. Il valore medio della variabile aleatoria $Y=4e^{2X}$ vale
+
+\begin{itemize}
+    \item $\frac{1}{e}$
+    \item Nessuna delle altre risposte
+    \item $0$
+    \item $e-e^{-1}$
+    \item $e^2-e^{-2}$ (Risposta Corretta)
+\end{itemize}
+
+\textbf{Esercizio 109}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità  data da
+\[
+f_X(x)=
+\begin{cases}
+    0.3 & 0\leq x\leq 1\\
+    K & 1\leq x \leq 2 \\
+\end{cases}
+\]
+Quanto vale la costante $K$?
+
+\begin{itemize}
+    \item $0.5$
+    \item $0.7$ (Risposta Corretta)
+    \item $0.2$
+    \item $0.8$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 110}
+Siano $X\sim Ge(\frac{1}{3})$ e $Y\sim Ge(\frac{1}{2})$ due variabili aleatorie indipendenti. Quanto vale $Var(4+X-3Y)$?
+
+\begin{itemize}
+    \item $16$
+    \item $28$
+    \item $24$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $12$
+\end{itemize}
+
+\textbf{Esercizio 111}
+Si consideri $X\sim U(-1,1)$. Il valore medio della variabile aleatoria $Y=X^3$ vale
+
+\begin{itemize}
+    \item $\frac{1}{2}$
+    \item $0$ (Risposta Corrette)
+    \item Nessuna delle altre risposte
+    \item $\frac{1}{8}$
+    \item $\frac{1}{4}$
+\end{itemize}
+
+\textbf{Esercizio 112}
+Sia $X\sim N(1,4)$ e sia $\Phi$ la funzione di distribuzione della gaussiana centrata standard. Allora, per $x\in \mathbf{R}$, $P(X\leq x)$ è uguale a
+
+\begin{itemize}
+    \item $\Phi(x-1)$
+    \item $\Phi(\frac{x-1}{2})$ (Risposta Corretta)
+    \item $\Phi(x)$
+    \item $\Phi(\frac{x-1}{4})$
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 113}
+Sia $X$ una variabile aleatoria esponenziale con valore medio $\frac{1}{2}$. Quanto vale $P(X>6|X<4)$?
+
+\begin{itemize}
+    \item $1-e^{-2}$
+    \item $e^{-4}$ (Risposta Corretta)
+    \item $e^{-2}$
+    \item Nessuna delle altre risposte
+    \item $1-e^{-4}$
+\end{itemize}
+
+\textbf{Esercizio 114}
+Sia $X$ una variabile aleatoria assolutamente continua con funzione di distribuzione data da
+\[
+F_x(x)=
+\begin{cases}
+    0 & x<0\\
+    3x^2-2x^2 & 0\leq x\leq 1\\
+    1 & x>1
+\end{cases}
+\]
+Quanto vale $P(0.5\leq X\leq 1)$?
+ 
+\begin{itemize}
+    \item $0.5$ (Risposta Corretta)
+    \item $1$
+    \item $0.6$
+    \item Nessuna delle altre risposte
+    \item $0.4$
+\end{itemize}
+
+\textbf{Esercizio 115}
+Siano $X_1$, ..., $X_{36}$ variabili aleatorie i.i.d con distribuzione $Bin(100,\frac{1}{5})$. Quale delle seguenti variabili ha una distribuzione che può essere approssimata con la distribuzione di una normale centrata standard?
+
+\begin{itemize}
+    \item $10\cdot \frac{\overline{X}_{36}-0.2}{\sqrt{0.16}}$
+    \item $\overline{X}_{36}$
+    \item $\frac{\overline{X}_{36}-20}{4}$
+    \item $3\cdot \frac{\overline{X}_{36}-20}{2}$ (Risposta Corretta) 
+    \item Nessuna delle altre risposte
+\end{itemize}
+
+\textbf{Esercizio 116}
+Sia $X$ una variabile aleatoria assolutamente continua con densità di probabilità data da
+\[
+f_x(x)=
+\begin{cases}
+    \frac{1}{x} & 1\leq x\leq e\\
+    0 & altrimenti
+\end{cases}
+\]
+Quanto vale $P(\frac{e}{2}\leq X\leq e)$?
+ 
+\begin{itemize}
+    \item $ln2$ (Risposta Corretta)
+    \item Nessuna delle altre risposte
+    \item $\frac{e}{2}$
+    \item $\frac{1}{2}$
+    \item $e$
 \end{itemize}
 
 \end{document}
